@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+
+    <record id="object1" model="aca_timetable.room">
+      <field name="name">Salle 1</field>
+    </record>
+
+    <record id="object2" model="aca_timetable.room">
+      <field name="name">Salle 2</field>
+    </record>
+
+    <record id="object3" model="aca_timetable.room">
+      <field name="name">Salle 3</field>
+    </record>
+
+    <record id="object4" model="aca_timetable.room">
+      <field name="name">Salle 4</field>
+    </record>
+
+    <record id="object5" model="aca_timetable.room">
+      <field name="name">Salle 5</field>
+    </record>
+
+  </data>
+</odoo>

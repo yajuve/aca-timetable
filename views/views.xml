@@ -1,0 +1,61 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="aca_timetable.list">
+      <field name="name">aca_timetable list</field>
+      <field name="model">aca_timetable.aca_timetable</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="aca_timetable.action_window_room">
+      <field name="name">Rooms window</field>
+      <field name="res_model">aca_timetable.room</field>
+      <field name="view_mode">list,form</field>
+      <field name="path">rooms</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="aca_timetable.action_server">
+      <field name="name">aca_timetable server</field>
+      <field name="model_id" ref="model_aca_timetable_aca_timetable"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Aca Timetable" id="aca_timetable.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Room" id="aca_timetable.menu_room" parent="aca_timetable.menu_root"/>
+    <!-- <menuitem name="Menu 2" id="aca_timetable.menu_2" parent="aca_timetable.menu_root"/> -->
+
+    <!-- actions -->
+
+    <menuitem name="List" id="aca_timetable.menu_room_list" parent="aca_timetable.menu_room"
+              action="aca_timetable.action_window_room"/>
+    <!-- <menuitem name="Server to list" id="aca_timetable" parent="aca_timetable.menu_2"
+              action="aca_timetable.action_server"/> -->
+
+  </data>
+</odoo>

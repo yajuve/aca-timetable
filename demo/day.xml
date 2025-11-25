@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+
+    <record id="saturday" model="aca_timetable.day">
+      <field name="name">Saturday</field>
+    </record>
+
+    <record id="Sunday" model="aca_timetable.day">
+      <field name="name">Sunday</field>
+    </record>
+
+    <record id="Monday" model="aca_timetable.day">
+      <field name="name">Monday</field>
+    </record>
+
+    <record id="Tuesday" model="aca_timetable.day">
+      <field name="name">Tuesday</field>
+    </record>
+
+    <record id="Wednesday" model="aca_timetable.day">
+      <field name="name">Monday</field>
+    </record>
+
+    <record id="Thursday" model="aca_timetable.day">
+      <field name="name">Thursday</field>
+    </record>
+
+  </data>
+</odoo>

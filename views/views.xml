@@ -1,19 +1,17 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="aca_timetable.list">
+    
+    <record model="ir.ui.view" id="aca_timetable.list_hour">
       <field name="name">aca_timetable list</field>
-      <field name="model">aca_timetable.aca_timetable</field>
+      <field name="model">aca_timetable.hour</field>
       <field name="arch" type="xml">
         <list>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="desc" string="Description"/>
         </list>
       </field>
     </record>
--->
 
     <!-- actions opening views on models -->
 

@@ -30,6 +30,8 @@ Manage Academic Timetable
     'demo': [
         'demo/demo.xml',
         'demo/room.xml',
+        'demo/day.xml',
+        'demo/hour.xml',
     ],
 }
 

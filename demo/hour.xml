@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+
+        <record id="H1" model="aca_timetable.hour">
+            <field name="name">H1</field>
+            <field name="desc">08:00-09:30</field>
+        </record>
+
+        <record id="H2" model="aca_timetable.hour">
+            <field name="name">H2</field>
+            <field name="desc">09:30-11:00</field>
+        </record>
+
+        <record id="H3" model="aca_timetable.hour">
+            <field name="name">H3</field>
+            <field name="desc">11:00-12:30</field>
+        </record>
+
+        <record id="H4" model="aca_timetable.hour">
+            <field name="name">H4</field>
+            <field name="desc">12:30-14:00</field>
+        </record>
+
+        <record id="H5" model="aca_timetable.hour">
+            <field name="name">H5</field>
+            <field name="desc">14:00-15:30</field>
+        </record>
+
+        <record id="H6" model="aca_timetable.hour">
+            <field name="name">H6</field>
+            <field name="desc">15:30-17:00</field>
+        </record>
+
+
+    </data>
+</odoo>

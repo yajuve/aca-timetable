@@ -2,3 +2,5 @@
 
 from . import models
 from . import room
+from . import day
+from . import hour

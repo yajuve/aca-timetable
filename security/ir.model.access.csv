@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_aca_timetable_room,aca_timetable.room,model_aca_timetable_room,base.group_system,1,1,1,1
+access_aca_timetable_day,aca_timetable.day,model_aca_timetable_day,base.group_system,1,1,1,1
+access_aca_timetable_hour,aca_timetable.hour,model_aca_timetable_hour,base.group_system,1,1,1,1

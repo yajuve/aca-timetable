@@ -5,3 +5,4 @@ access_aca_timetable_hour,aca_timetable.hour,model_aca_timetable_hour,base.group
 access_aca_timetable_year,aca_timetable.year,model_aca_timetable_year,base.group_system,1,1,1,1
 access_aca_timetable_timetableline,aca_timetable.timetableline,model_aca_timetable_timetableline,base.group_system,1,1,1,1
 access_aca_timetable_timetable,aca_timetable.timetable,model_aca_timetable_timetable,base.group_system,1,1,1,1
+access_aca_timetable_program,aca_timetable.program,model_aca_timetable_program,base.group_system,1,1,1,1

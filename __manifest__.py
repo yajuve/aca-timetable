@@ -16,6 +16,7 @@ Manage Academic Timetable
     # for the full list
     'category': 'Administration',
     'version': '0.1',
+    'license': 'MIT',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
@@ -33,6 +34,7 @@ Manage Academic Timetable
         'demo/day.xml',
         'demo/hour.xml',
         'demo/year.xml',
+        'demo/program.xml',
         'demo/timetable.xml',
         'demo/timetableline.xml',
     ],

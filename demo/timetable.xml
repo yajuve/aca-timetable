@@ -3,6 +3,7 @@
 
     <record id="timetable2025_2026s1" model="aca_timetable.timetable">
       <field name="year_id" ref="year1" />
+      <field name="program_id" ref="program1" />
     </record>
 
   </data>

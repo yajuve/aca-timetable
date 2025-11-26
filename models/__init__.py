@@ -7,3 +7,4 @@ from . import hour
 from . import timetable
 from . import timetableline
 from . import year
+from . import program

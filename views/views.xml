@@ -73,6 +73,13 @@
       <field name="path">years</field>
     </record>
 
+    <record model="ir.actions.act_window" id="aca_timetable.action_window_program">
+      <field name="name">Programs window</field>
+      <field name="res_model">aca_timetable.program</field>
+      <field name="view_mode">list,form</field>
+      <field name="path">programs</field>
+    </record>
+
     <record model="ir.actions.act_window" id="aca_timetable.action_window_timetable">
       <field name="name">Timetable window</field>
       <field name="res_model">aca_timetable.timetable</field>
@@ -110,20 +117,22 @@
     <menuitem name="Timetable" id="aca_timetable.menu_timetable"
       parent="aca_timetable.menu_root"
       action="aca_timetable.action_window_timetable" />
-      <!-- Config Menu -->
+    <!-- Config Menu -->
     <menuitem name="Configure" id="aca_timetable.menu_config" parent="aca_timetable.menu_root" />
-    
+
 
     <!-- actions -->
 
     <menuitem name="Room" id="aca_timetable.menu_room_list" parent="aca_timetable.menu_config"
       action="aca_timetable.action_window_room" />
-      <menuitem name="Day" id="aca_timetable.menu_day" parent="aca_timetable.menu_config"
+    <menuitem name="Day" id="aca_timetable.menu_day" parent="aca_timetable.menu_config"
       action="aca_timetable.action_window_day" />
     <menuitem name="Hour" id="aca_timetable.menu_hour" parent="aca_timetable.menu_config"
       action="aca_timetable.action_window_hour" />
     <menuitem name="Year" id="aca_timetable.menu_year" parent="aca_timetable.menu_config"
       action="aca_timetable.action_window_year" />
+    <menuitem name="Program" id="aca_timetable.menu_program" parent="aca_timetable.menu_config"
+      action="aca_timetable.action_window_program" />
     <!-- <menuitem name="Server to list" id="aca_timetable" parent="aca_timetable.menu_2"
               action="aca_timetable.action_server"/> -->
 

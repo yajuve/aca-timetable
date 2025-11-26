@@ -7,3 +7,6 @@ class Timetable(models.Model):
 
     year_id = fields.Many2one(
         "aca_timetable.year", string="Year", required=True, tracking=True)
+
+    program_id = fields.Many2one(
+        "aca_timetable.program", string="Program", required=True, tracking=True)

@@ -1,0 +1,21 @@
+<odoo>
+  <data>
+
+    <record id="program1" model="aca_timetable.program">
+      <field name="name">Program 1</field>
+    </record>
+
+    <record id="program2" model="aca_timetable.program">
+      <field name="name">Program 2</field>
+    </record>
+
+    <record id="program3" model="aca_timetable.program">
+      <field name="name">Program 3</field>
+    </record>
+
+    <record id="program4" model="aca_timetable.program">
+      <field name="name">Program 4</field>
+    </record>
+
+  </data>
+</odoo>

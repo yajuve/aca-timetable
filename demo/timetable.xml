@@ -1,7 +1,7 @@
 <odoo>
   <data>
 
-    <record id="timetable2025-2026s1" model="aca_timetable.timetable">
+    <record id="timetable2025_2026s1" model="aca_timetable.timetable">
       <field name="year_id" ref="year1" />
     </record>
 

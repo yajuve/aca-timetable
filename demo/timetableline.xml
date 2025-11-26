@@ -1,7 +1,40 @@
 <odoo>
   <data>
 
+    <record id="timetableline1" model="aca_timetable.timetableline">
+      <field name="timetable_id" ref="timetable2025_2026s1" />
+      <field name="room_id" ref="room1" />
+      <field name="day_id" ref="Sunday" />
+      <field name="hour_id" ref="H1" />
+    </record>
 
+    <record id="timetableline2" model="aca_timetable.timetableline">
+      <field name="timetable_id" ref="timetable2025_2026s1" />
+      <field name="room_id" ref="room1" />
+      <field name="day_id" ref="Sunday" />
+      <field name="hour_id" ref="H2" />
+    </record>
+
+    <record id="timetableline3" model="aca_timetable.timetableline">
+      <field name="timetable_id" ref="timetable2025_2026s1" />
+      <field name="room_id" ref="room1" />
+      <field name="day_id" ref="Sunday" />
+      <field name="hour_id" ref="H3" />
+    </record>
+
+    <record id="timetableline4" model="aca_timetable.timetableline">
+      <field name="timetable_id" ref="timetable2025_2026s1" />
+      <field name="room_id" ref="room2" />
+      <field name="day_id" ref="Sunday" />
+      <field name="hour_id" ref="H1" />
+    </record>
+
+    <record id="timetableline5" model="aca_timetable.timetableline">
+      <field name="timetable_id" ref="timetable2025_2026s1" />
+      <field name="room_id" ref="room3" />
+      <field name="day_id" ref="Sunday" />
+      <field name="hour_id" ref="H4" />
+    </record>
 
   </data>
 </odoo>

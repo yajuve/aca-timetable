@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "aca_timetable",
+    'name': "Aca Timetable",
 
-    'summary': "Aca Timetable",
+    'summary': "Manage Academic Timetable",
 
     'description': """
 Manage Academic Timetable

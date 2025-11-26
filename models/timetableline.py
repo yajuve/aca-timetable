@@ -16,10 +16,10 @@ class TimetableLine(models.Model):
     # timetable_id = fields.Many2one(
     #     "aca_timetable.timetable", string="Timetable", required=True, tracking=True)
     room_id = fields.Many2one(
-        "aca_timetable.room", string="Room", required=True, tracking=True)
+        "aca_timetable.room", string="Room", required=True)
     hour_id = fields.Many2one(
-        "aca_timetable.hour", string="Hour", required=True, tracking=True)
+        "aca_timetable.hour", string="Hour", required=True)
     day_id = fields.Many2one(
-        "aca_timetable.day", string="Day", required=True, tracking=True)
+        "aca_timetable.day", string="Day", required=True)
     group_id = fields.Many2one(
-        "aca_timetable.group", string="Group", required=True, tracking=True)
+        "aca_timetable.group", string="Group", required=True)

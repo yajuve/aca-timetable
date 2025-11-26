@@ -6,10 +6,10 @@ class Timetable(models.Model):
     _description = 'aca_timetable.timetable'
 
     year_id = fields.Many2one(
-        "aca_timetable.year", string="Year", required=True, tracking=True)
+        "aca_timetable.year", string="Year", required=True)
 
     program_id = fields.Many2one(
-        "aca_timetable.program", string="Program", required=True, tracking=True)
+        "aca_timetable.program", string="Program", required=True)
     
     @api.model
     def _compute_display_name(self):

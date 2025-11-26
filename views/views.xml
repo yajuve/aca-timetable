@@ -103,24 +103,27 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Room" id="aca_timetable.menu_room" parent="aca_timetable.menu_root" />
-    <menuitem name="Day" id="aca_timetable.menu_day" parent="aca_timetable.menu_root"
-      action="aca_timetable.action_window_day" />
-    <menuitem name="Hour" id="aca_timetable.menu_hour" parent="aca_timetable.menu_root"
-      action="aca_timetable.action_window_hour" />
-    <menuitem name="Year" id="aca_timetable.menu_year" parent="aca_timetable.menu_root"
-      action="aca_timetable.action_window_year" />
+
     <menuitem name="TimetableLine" id="aca_timetable.menu_timetableline"
       parent="aca_timetable.menu_root"
       action="aca_timetable.action_window_timetableline" />
     <menuitem name="Timetable" id="aca_timetable.menu_timetable"
       parent="aca_timetable.menu_root"
       action="aca_timetable.action_window_timetable" />
+      <!-- Config Menu -->
+    <menuitem name="Configure" id="aca_timetable.menu_config" parent="aca_timetable.menu_root" />
+    
 
     <!-- actions -->
 
-    <menuitem name="List" id="aca_timetable.menu_room_list" parent="aca_timetable.menu_room"
+    <menuitem name="Room" id="aca_timetable.menu_room_list" parent="aca_timetable.menu_config"
       action="aca_timetable.action_window_room" />
+      <menuitem name="Day" id="aca_timetable.menu_day" parent="aca_timetable.menu_config"
+      action="aca_timetable.action_window_day" />
+    <menuitem name="Hour" id="aca_timetable.menu_hour" parent="aca_timetable.menu_config"
+      action="aca_timetable.action_window_hour" />
+    <menuitem name="Year" id="aca_timetable.menu_year" parent="aca_timetable.menu_config"
+      action="aca_timetable.action_window_year" />
     <!-- <menuitem name="Server to list" id="aca_timetable" parent="aca_timetable.menu_2"
               action="aca_timetable.action_server"/> -->
 

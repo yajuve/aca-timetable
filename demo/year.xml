@@ -1,0 +1,13 @@
+<odoo>
+  <data>
+
+    <record id="year1" model="aca_timetable.year">
+      <field name="name">2025-2026 (S1)</field>
+    </record>
+
+    <record id="year2" model="aca_timetable.year">
+      <field name="name">2025-2026 (S2)</field>
+    </record>
+
+  </data>
+</odoo>

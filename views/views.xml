@@ -1,14 +1,14 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    
+
     <record model="ir.ui.view" id="aca_timetable.list_hour">
       <field name="name">aca_timetable list</field>
       <field name="model">aca_timetable.hour</field>
       <field name="arch" type="xml">
         <list>
-          <field name="name"/>
-          <field name="desc" string="Description"/>
+          <field name="name" />
+          <field name="desc" string="Description" />
         </list>
       </field>
     </record>
@@ -18,9 +18,9 @@
       <field name="model">aca_timetable.timetableline</field>
       <field name="arch" type="xml">
         <list>
-          <field name="room_id"/>
-          <field name="day_id"/>
-          <field name="hour_id"/>
+          <field name="room_id" />
+          <field name="day_id" />
+          <field name="hour_id" />
         </list>
       </field>
     </record>
@@ -55,6 +55,13 @@
       <field name="path">timetablelines</field>
     </record>
 
+    <record model="ir.actions.act_window" id="aca_timetable.action_window_year">
+      <field name="name">Years window</field>
+      <field name="res_model">aca_timetable.year</field>
+      <field name="view_mode">list,form</field>
+      <field name="path">years</field>
+    </record>
+
 
     <!-- server action to the one above -->
     <!--
@@ -83,8 +90,11 @@
       action="aca_timetable.action_window_day" />
     <menuitem name="Hour" id="aca_timetable.menu_hour" parent="aca_timetable.menu_root"
       action="aca_timetable.action_window_hour" />
-    <menuitem name="TimetableLine" id="aca_timetable.menu_timetableline" parent="aca_timetable.menu_root"
-    action="aca_timetable.action_window_timetableline" />
+    <menuitem name="Year" id="aca_timetable.menu_year" parent="aca_timetable.menu_root"
+      action="aca_timetable.action_window_year" />
+    <menuitem name="TimetableLine" id="aca_timetable.menu_timetableline"
+      parent="aca_timetable.menu_root"
+      action="aca_timetable.action_window_timetableline" />
 
     <!-- actions -->
 

@@ -5,3 +5,4 @@ from . import room
 from . import day
 from . import hour
 from . import timetableline
+from . import year

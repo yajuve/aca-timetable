@@ -34,9 +34,10 @@ Manage Academic Timetable
         'demo/day.xml',
         'demo/hour.xml',
         'demo/year.xml',
+        'demo/level.xml',
+        'demo/speciality.xml',
         'demo/program.xml',
         'demo/timetable.xml',
         'demo/timetableline.xml',
     ],
 }
-

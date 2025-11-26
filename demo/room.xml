@@ -21,5 +21,17 @@
       <field name="name">Salle 5</field>
     </record>
 
+    <record id="amphi1" model="aca_timetable.room">
+      <field name="name">Amphi 1</field>
+    </record>
+
+    <record id="amphi2" model="aca_timetable.room">
+      <field name="name">Amphi 2</field>
+    </record>
+
+    <record id="amphi3" model="aca_timetable.room">
+      <field name="name">Amphi 3</field>
+    </record>
+
   </data>
 </odoo>

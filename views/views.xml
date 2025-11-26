@@ -18,10 +18,10 @@
       <field name="model">aca_timetable.timetableline</field>
       <field name="arch" type="xml">
         <list>
-          <field name="timetable_id" />
           <field name="room_id" />
           <field name="day_id" />
           <field name="hour_id" />
+          <field name="group_id" />
         </list>
       </field>
     </record>
@@ -32,6 +32,29 @@
       <field name="arch" type="xml">
         <list>
           <field name="year_id" />
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="aca_timetable.list_year_level">
+      <field name="name">aca_timetable list</field>
+      <field name="model">aca_timetable.year_level</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="level_id" />
+          <field name="speciality_id" />
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="aca_timetable.list_group">
+      <field name="name">aca_timetable list</field>
+      <field name="model">aca_timetable.group</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name" />
+          <field name="year_level_id" />
+          <field name="parent_id" />
         </list>
       </field>
     </record>
@@ -87,6 +110,13 @@
       <field name="path">timetables</field>
     </record>
 
+    <record model="ir.actions.act_window" id="aca_timetable.action_window_group">
+      <field name="name">Groups window</field>
+      <field name="res_model">aca_timetable.group</field>
+      <field name="view_mode">list,form</field>
+      <field name="path">groups</field>
+    </record>
+
 
     <!-- server action to the one above -->
     <!--
@@ -117,6 +147,9 @@
     <menuitem name="Timetable" id="aca_timetable.menu_timetable"
       parent="aca_timetable.menu_root"
       action="aca_timetable.action_window_timetable" />
+    <menuitem name="Group" id="aca_timetable.menu_group"
+      parent="aca_timetable.menu_root"
+      action="aca_timetable.action_window_group" />
     <!-- Config Menu -->
     <menuitem name="Configure" id="aca_timetable.menu_config" parent="aca_timetable.menu_root" />
 

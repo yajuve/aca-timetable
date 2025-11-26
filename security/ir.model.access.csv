@@ -6,3 +6,6 @@ access_aca_timetable_year,aca_timetable.year,model_aca_timetable_year,base.group
 access_aca_timetable_timetableline,aca_timetable.timetableline,model_aca_timetable_timetableline,base.group_system,1,1,1,1
 access_aca_timetable_timetable,aca_timetable.timetable,model_aca_timetable_timetable,base.group_system,1,1,1,1
 access_aca_timetable_program,aca_timetable.program,model_aca_timetable_program,base.group_system,1,1,1,1
+access_aca_timetable_level,aca_timetable.level,model_aca_timetable_level,base.group_system,1,1,1,1
+access_aca_timetable_speciality,aca_timetable.speciality,model_aca_timetable_speciality,base.group_system,1,1,1,1
+access_aca_timetable_group,aca_timetable.group,model_aca_timetable_group,base.group_system,1,1,1,1

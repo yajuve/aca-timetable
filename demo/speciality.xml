@@ -1,0 +1,21 @@
+<odoo>
+  <data>
+
+    <record id="spec1" model="aca_timetable.speciality">
+      <field name="name">Speciality 1</field>
+    </record>
+
+    <record id="spec2" model="aca_timetable.speciality">
+      <field name="name">Speciality 2</field>
+    </record>
+
+    <record id="spec3" model="aca_timetable.speciality">
+      <field name="name">Speciality 3</field>
+    </record>
+
+    <record id="spec4" model="aca_timetable.speciality">
+      <field name="name">Speciality 4</field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+
+    <record id="l1" model="aca_timetable.level">
+      <field name="name">L1</field>
+    </record>
+
+    <record id="l2" model="aca_timetable.level">
+      <field name="name">L2</field>
+    </record>
+
+    <record id="l3" model="aca_timetable.level">
+      <field name="name">L3</field>
+    </record>
+
+    <record id="master1" model="aca_timetable.level">
+      <field name="name">Master 1</field>
+    </record>
+
+    <record id="master2" model="aca_timetable.level">
+      <field name="name">Master 2</field>
+    </record>
+
+  </data>
+</odoo>

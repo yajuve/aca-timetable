@@ -25,6 +25,16 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="aca_timetable.list_timetable">
+      <field name="name">aca_timetable list</field>
+      <field name="model">aca_timetable.timetable</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="year_id" />
+        </list>
+      </field>
+    </record>
+
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="aca_timetable.action_window_room">
@@ -62,6 +72,13 @@
       <field name="path">years</field>
     </record>
 
+    <record model="ir.actions.act_window" id="aca_timetable.action_window_timetable">
+      <field name="name">Timetable window</field>
+      <field name="res_model">aca_timetable.timetable</field>
+      <field name="view_mode">list,form</field>
+      <field name="path">timetables</field>
+    </record>
+
 
     <!-- server action to the one above -->
     <!--
@@ -95,6 +112,9 @@
     <menuitem name="TimetableLine" id="aca_timetable.menu_timetableline"
       parent="aca_timetable.menu_root"
       action="aca_timetable.action_window_timetableline" />
+    <menuitem name="Timetable" id="aca_timetable.menu_timetable"
+      parent="aca_timetable.menu_root"
+      action="aca_timetable.action_window_timetable" />
 
     <!-- actions -->
 

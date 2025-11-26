@@ -33,6 +33,7 @@ Manage Academic Timetable
         'demo/day.xml',
         'demo/hour.xml',
         'demo/year.xml',
+        'demo/timetable.xml',
     ],
 }
 

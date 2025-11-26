@@ -4,7 +4,7 @@ from odoo import models, fields, api
 class TimetableLine(models.Model):
     _name = 'aca_timetable.timetableline'
     _description = 'aca_timetable.timetableline'
-    
+
     _sql_constraints = [('unique_timetableline', 'UNIQUE(timetable_id,room_id,hour_id,day_id)',
                          'Each timetable line should be unique')]
 

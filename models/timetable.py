@@ -10,3 +10,8 @@ class Timetable(models.Model):
 
     program_id = fields.Many2one(
         "aca_timetable.program", string="Program", required=True, tracking=True)
+    
+    @api.model
+    def _compute_display_name(self):
+        for record in self:
+            record.display_name = f"{record.program_id.name or ''} {record.year_id.name or ''}"

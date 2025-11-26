@@ -26,6 +26,9 @@ Manage Academic Timetable
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+
+        'views/group_report_template.xml',
+        'views/group_form.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

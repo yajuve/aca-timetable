@@ -1,0 +1,45 @@
+<odoo>
+    <template id="group_report_template">
+        <t t-call="web.basic_layout">
+            <div class="page">
+
+                <h2>Group Report</h2>
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Year Level</th>
+                            <th>Parent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Loop through the records -->
+                        <t t-foreach="docs" t-as="group">
+                            <tr>
+                                <td>
+                                    <t t-esc="group.name" />
+                                </td>
+                                <td>
+                                    <t t-esc="group.year_level_id.display_name" />
+                                </td>
+                                <td>
+                                    <t t-esc="group.parent_id.display_name or ''" />
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+            </div>
+        </t>
+    </template>
+
+    <record id="aca_timetable.action_group_report" model="ir.actions.report">
+        <field name="name">Group Report</field>
+        <field name="model">aca_timetable.group</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">aca_timetable.group_report_template</field>
+        <field name="report_file">aca_timetable.group_report_template</field>
+        <field name="print_report_name">'Group - %s' % (object.display_name)</field>
+    </record>
+</odoo>
